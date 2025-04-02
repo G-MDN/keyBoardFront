@@ -1,4 +1,4 @@
-import imgHomePage  from "../../assets/imgHomePage.jpg";
+import imgHomePage from "../../assets/imgHomePage.jpg";
 import "./HomePageInformation..css";
 
 function HomePageInformation() {
@@ -6,12 +6,12 @@ function HomePageInformation() {
     <div className="containerHomePageInformation">
       <img src={imgHomePage} alt="" className="imgHomePage" />
       <p>
-        Avec KeyBord, simplifier la gestion de vos trousseaux de clefs.
+        Avec KeyBord, simplifiez la gestion de vos trousseaux de clefs.
         <br />
         <br />
         Quel agent immobilier ne s’est jamais posé la question de savoir ou il a
-        mit les clefs du dernier logement visité ? Lequel des mes collègues n’a
-        pas remit les clefs à leur place ? Quel est le dernier entrepreneur à
+        mis les clefs du dernier logement visité ? Lequel des mes collègues n’a
+        pas remis les clefs à leur place ? Quel est le dernier entrepreneur à
         être intervenu dans le bien ?
         <br />
         <br />

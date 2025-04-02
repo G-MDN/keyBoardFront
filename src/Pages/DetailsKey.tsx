@@ -5,14 +5,15 @@ import HomePageVerticalLigne from "../Components/homePage/HomePageVerticalLigne"
 import KeyInformations from "../Components/detailsKey/KeyInformations";
 import KeyPhoto from "../Components/detailsKey/KeyPhoto";
 import axios from "axios";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 
 import "./DetailsKey.css";
 
 function DetailsKey() {
   const [detail, setDetail] = useState([]);
   const { id } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios
@@ -37,7 +38,7 @@ function DetailsKey() {
         />
         <div className="buttonsDetailsKeyTop">
           <HistoriqueButton />
-          <ArchiveButton />
+          <ArchiveButton id={id} />
         </div>
       </div>
       <div className="allActionButton">

@@ -12,6 +12,7 @@
 
   @media (width < 767px) {
     width: 150px;
+    height: 115px;
   }
 }
 
