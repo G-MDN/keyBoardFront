@@ -1,0 +1,12 @@
+.buttonNewKey {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.buttonNewKey:hover {
+  background-color: brown;
+  color: #fff;
+}

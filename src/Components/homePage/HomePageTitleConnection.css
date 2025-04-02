@@ -1,0 +1,13 @@
+.containerTitle {
+  width: 80%;
+  height: 100px;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    color: #fff;
+  }
+}

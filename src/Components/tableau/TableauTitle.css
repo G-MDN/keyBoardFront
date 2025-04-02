@@ -1,0 +1,18 @@
+.tableauTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+
+  .key-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  @media (width <767px) {
+    .key-icon {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.HomePagePricipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  height: 100vh;
+
+  @media (width < 767px) {
+    display: flex;
+    flex-direction: column;
+  }
+}

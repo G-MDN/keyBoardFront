@@ -1,0 +1,24 @@
+.tableauHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+
+}
+
+.allEtiquettes {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(7, 200px);
+  grid-template-rows: repeat(2, 200px);
+  justify-content: space-evenly;
+  gap: 40px;
+
+  @media (width < 767px) {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 100px);
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+}

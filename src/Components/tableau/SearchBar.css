@@ -1,0 +1,19 @@
+.containerInput {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .SearchBar {
+    width: 20%;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+    height: 37px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+
+    @media (width < 767px) {
+      width: 80%;
+    }
+  }
+}

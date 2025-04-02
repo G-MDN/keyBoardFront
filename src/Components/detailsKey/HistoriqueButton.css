@@ -1,0 +1,10 @@
+.historiqueButton {
+  width: 250px;
+  height: 80px;
+  border-radius: 10px;
+  color: var(--tertiary-color);
+  background-color: var(--fourth-color);
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}

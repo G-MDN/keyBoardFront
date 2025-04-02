@@ -1,0 +1,23 @@
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      width: 80%;
+      height: 50px;
+      border-radius: 10px;
+      background-color: var(--main-color);
+      border: none;
+      outline: none;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
