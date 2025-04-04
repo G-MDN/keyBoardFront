@@ -8,8 +8,8 @@
 .allEtiquettes {
   margin-top: 70px;
   display: grid;
-  grid-template-columns: repeat(6, 200px);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(9, 200px);
   justify-content: space-evenly;
 
   @media (width < 767px) {

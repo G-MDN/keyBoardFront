@@ -14,23 +14,66 @@
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 40vw;
+  height: 50vh;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 30px;
-  height: 90vh;
   position: fixed;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1001;
 
-  form {
+  .containerForm {
+    width: 70%;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      width: 70%;
+
+      input {
+        border: solid 1px;
+        outline: none;
+        height: 30px;
+        border-radius: 5px;
+        padding-left: 10px;
+        width: 100%;
+      }
+    }
+
+    .validateButton {
+      width: 50%;
+      height: 35px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      background: var(--main-color);
+      margin-top: 20px;
+    }
+
+    .validateButton:hover {
+      background: brown;
+      color: #fff;
+    }
   }
 
   @media (width < 767px) {
     width: 80vw;
+  }
+
 }

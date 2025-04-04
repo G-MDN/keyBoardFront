@@ -5,7 +5,7 @@ import HomePageVerticalLigne from "../Components/homePage/HomePageVerticalLigne"
 import KeyInformations from "../Components/detailsKey/KeyInformations";
 import KeyPhoto from "../Components/detailsKey/KeyPhoto";
 import axios from "axios";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import "./DetailsKey.css";
@@ -13,7 +13,6 @@ import "./DetailsKey.css";
 function DetailsKey() {
   const [detail, setDetail] = useState([]);
   const { id } = useParams();
-  const navigate = useNavigate();
 
   useEffect(() => {
     axios
@@ -25,16 +24,21 @@ function DetailsKey() {
       .catch((error) => console.error("Erreur API :", error));
   }, [id]);
 
+  const handleKeyUpdate = (updatedData: any) => {
+    setDetail(updatedData);
+  };
+
   return (
     <div>
       <div className="detailsKeyTop">
         <KeyPhoto />
         <KeyInformations
-          key={detail.id}
+          id={detail.id}
           number={detail.number}
           lastname={detail.lastname}
           address={detail.address}
           status={detail.status}
+          onUpdate={handleKeyUpdate}
         />
         <div className="buttonsDetailsKeyTop">
           <HistoriqueButton />

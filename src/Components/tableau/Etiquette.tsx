@@ -8,29 +8,38 @@ interface EtiquetteProps {
   onClick?: () => void;
 }
 
-function Etiquette({ number, lastname, address, status, onClick}: EtiquetteProps) {
-
+function Etiquette({
+  number,
+  lastname,
+  address,
+  status,
+  onClick,
+}: EtiquetteProps) {
   const getStatusColor = (status: string) => {
     switch (status) {
       case "Available":
         return "green";
       case "Borrowed":
         return "red";
-        case "Lost":
+      case "Lost":
         return "gray";
     }
   };
 
   return (
+    // biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
     <div className="etiquette" onClick={onClick}>
-      <div className="corde">
-        
-      </div>
+      <div className="corde"></div>
       <div className="contenu">
         <p className="numero">N° {number}</p>
         <p className="nom">{lastname}</p>
         <p className="adresse">{address}</p>
-        <p className="availability" style={{ backgroundColor: getStatusColor(status)}}>{status}</p>
+        <p
+          className="availability"
+          style={{ backgroundColor: getStatusColor(status) }}
+        >
+          {status}
+        </p>
       </div>
     </div>
   );

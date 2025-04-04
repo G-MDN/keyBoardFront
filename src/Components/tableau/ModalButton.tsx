@@ -4,16 +4,22 @@ import { useState } from "react";
 import "./ModalButton.css";
 
 function ModalButton() {
-const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState(false);
 
-  return ( 
+  return (
     <div>
-      <button type="button" 
-      onClick={() => setShowModal(true)}
-      className="buttonNewKey">
+      <button
+        type="button"
+        onClick={() => setShowModal(true)}
+        className="buttonNewKey"
+      >
         Ajouter un trousseau
       </button>
-      {showModal && createPortal(<ModalNewKey closeModalKey={() => setShowModal(false)}/>, document.body)}
+      {showModal &&
+        createPortal(
+          <ModalNewKey closeModalKey={() => setShowModal(false)} />,
+          document.body,
+        )}
     </div>
   );
 }

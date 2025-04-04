@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 interface ArchiveButtonProps {
-  id: number;
+  id?: string;
 }
 
 function ArchiveButton({ id }: ArchiveButtonProps) {
